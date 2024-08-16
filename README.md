@@ -1,4 +1,5 @@
 Astro NFT Project
+
 Welcome to the Astro NFT project! This project is a web application that showcases a futuristic NFT collection, featuring distinct metaverse wearables designed for the Everdome experience.
 
 Project Structure
