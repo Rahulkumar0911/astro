@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Rave";
+  src: url("../assets/fonts/rave.otf") format('opentype');
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap") format('woff2');
+}
+
+@layer base {
+  p {
+    @apply text-sm;
+  }
+}
+
+/* Animation for different sections */
+#header {
+  animation: fadeIn 2.5s linear;
+}
+
+#hero-title {
+  animation: fadeUp 0.3s linear;
+}
+
+#hero-content {
+  animation: fadeUp 0.4s linear;
+}
+
+#hero-stats {
+  animation: fadeUp 1s linear;
+}
+
+#hero-right {
+  animation: fadeUp 1s linear;
+}
+
+#page2 {
+  animation: fadeUp 0.5s linear;
+}
+
+#lists {
+  animation: fadeLeft 0.5s linear;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
